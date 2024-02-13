@@ -33,6 +33,8 @@ EmployeeModel.objects.create(name=ename,age=eage,designation=edesignation,email=
 
 Complete code :
 --------------
+
+
 def  register(request):
     if request.method=="POST":
         form=EmployeeForm(request.POST)
@@ -43,8 +45,6 @@ def  register(request):
             eEmail=request.POST['email']
             eSal=request.POST['sal']
             EmployeeModel.objects.create(name=ename,age=eage,designation=edesignation,email=eEmail,sal=eSal)
-
-
     f=EmployeeForm()        
     return render(request,'register.html',context={'form':f})
  
