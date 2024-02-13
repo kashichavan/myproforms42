@@ -31,8 +31,7 @@ EmployeeModel.objects.create(name=ename,age=eage,designation=edesignation,email=
 
 
 
-Complete code :
---------------
+Complete code 
 
 
 def  register(request):
